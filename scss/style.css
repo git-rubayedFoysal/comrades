@@ -9,6 +9,11 @@ html {
   scroll-behavior: smooth;
 }
 
+.fa-bars:before {
+  content: "\f0c9";
+  color: #fff !important;
+}
+
 .sticky {
   position: fixed;
   top: 0px;
@@ -90,6 +95,62 @@ body {
 
 .navigation-top .navigation_left i {
   margin-right: 12px;
+}
+
+.navigation_right .mobile-icon i {
+  display: none;
+  float: right;
+  cursor: pointer;
+}
+
+.navigation_right .overly-dis {
+  width: 0%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  transition: 0.6s;
+  -webkit-transition: 0.6s;
+  -moz-transition: 0.6s;
+  -ms-transition: 0.6s;
+  -o-transition: 0.6s;
+}
+
+.navigation_right .overly-dis .menu-item {
+  position: relative;
+  top: 10%;
+  width: 100%;
+}
+
+.navigation_right .overly-dis .dissmiss {
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+  font-size: 3rem;
+  padding: 0rem 0.8rem;
+  float: right;
+  margin: 2.5rem;
+}
+
+.navigation_right .overly-dis .menu {
+  content: "";
+  clear: both;
+  display: block;
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+  font-size: 3rem;
+  padding: 1.3rem 0;
+}
+
+.navigation_right .overly-dis .menu:hover {
+  color: white;
+}
+
+.navigation_right .overly-dis .dissmiss:hover {
+  color: white;
+  border: 1px solid #fff;
 }
 
 .navigation_right a {

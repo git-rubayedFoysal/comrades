@@ -7,6 +7,11 @@ html {
   scroll-behavior: smooth;
 }
 
+.fa-bars:before {
+  content: "\f0c9";
+  color: #fff !important;
+}
+
 .sticky {
   position: fixed;
   top: 0px;
